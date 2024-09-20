@@ -1,0 +1,53 @@
+@import url("reset.css");
+
+/* div {
+    color: blue;
+} */
+/* .header {}
+
+.hero {}
+
+.block-list {}
+
+.list {}
+
+.item {}
+
+.link {}
+
+.img {}
+
+.number-list {}
+
+.number-item {}
+
+.block-canyon {}
+
+.block-lake {}
+
+.block-cave {}
+
+.block-grotto {} */
+a.link {
+    color: red;
+}
+
+.hero h1 {
+    color: blue;
+}
+
+div {
+    color: aqua;
+}
+
+#places {
+    color: blueviolet;
+}
+
+.block-canyon {
+    color: green;
+}
+
+[class*="block"]>h2 {
+    color: black;
+}
