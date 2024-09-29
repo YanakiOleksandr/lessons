@@ -1,0 +1,150 @@
+/* Імпорт шрифтів з сайту */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap'); */
+
+/* Імпорт шрифтів через плагін */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+
+/* Підключення стилів локально */
+@import url("fonts.css");
+
+/* обнулення налаштувань стилів */
+@import url("reset.css");
+
+/* .hero {}
+
+.list {}
+
+.item {}
+
+.main-part {}
+
+.education-overview {}
+
+.higher-education {}
+
+.reforms {}
+
+.prospects {} */
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.hero {
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 0.1rem;
+    text-shadow: 4px -4px 5px hsl(14, 100%, 48%);
+}
+
+.item {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    /* font-weight: 500; не спрацював */
+    text-align: center;
+    text-shadow: 4px -4px 5px hsl(0, 53%, 57%);
+
+    /* не працює на блочних тегах
+    text-decoration: underline;
+    text-decoration-color: blue; */
+}
+
+a {
+    font-weight: 500;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: blue;
+
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    font-style: italic;
+    text-shadow: 4px -4px 5px olive;
+}
+
+.main-part h3 {
+    font-size: 22px;
+    font-weight: 600;
+    font-style: oblique;
+    text-shadow: 3px -3px 3px #F4A460;
+}
+
+#block-education p {
+    line-height: 20px;
+    word-spacing: 25px;
+}
+
+.main-part p {
+    font-style: 18px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 155.555556%;
+    /* 28px/18px */
+}
+
+[id] h3 {
+    font-size: 22px;
+}
+
+#resume-about h3 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    color: #132238;
+}
+
+#resume-about p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #556070;
+}
+
+#about-us {
+    font-family: "DM Sans", sans-serif;
+}
+
+#about-us h3 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+    color: #1E1B39;
+}
+
+#about-us p {
+    font-size: 24px;
+    line-height: 24px;
+    color: #615E83;
+}
+
+#product-quickly {
+    font-family: "Roboto";
+}
+
+#product-quickly h3 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+}
+
+#product-quickly p {
+    font-size: 18px;
+    color: #505F98;
+    line-height: 30px;
+
+}
