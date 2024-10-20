@@ -1,0 +1,126 @@
+@import url(reset.css);
+
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,500,600,700,800&display=swap");
+
+h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: goldenrod;
+    background: url(../img/379690537017.jpg) center / cover;
+}
+
+.portfolio {
+    font-family: "Epilogue", sans-serif;
+    /* max-width: 1171px;
+    margin: 0 auto; */
+    padding-block: 50px;
+    background-color: #FDF0E9;
+}
+
+.container {
+    padding-inline: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+/* стилізуємо блок sub */
+
+.sub {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #EF6D58;
+}
+
+/* стилізуємо контент */
+
+.left-content {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 50%;
+    margin-right: 171px;
+}
+
+.left-content h2 {
+    font-size: 56px;
+    max-width: 397px;
+    color: #391400;
+    font-weight: 800;
+    margin-bottom: 26px;
+    line-height: 64px;
+}
+
+.left-content p {
+    max-width: 470px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #391400;
+    margin-bottom: 26px;
+}
+
+.list {
+    font-size: 16px;
+}
+
+.list li {
+    margin-bottom: 16px;
+    background: url(../img/check.svg) 0 0 / 15px no-repeat;
+    padding-inline-start: 25px;
+    min-height: 15px;
+}
+
+.right-content {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 50%;
+}
+
+/* стилізація второго завдання */
+
+.movie {
+    font-family: "Manrope", sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+.background {
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.0) 100%), linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.0) 100%), url(../img/sub_container.png) center / cover;
+    min-height: 860px;
+    margin-bottom: -64px;
+}
+
+.content {
+    margin-bottom: 50px;
+    margin: 0 auto;
+    max-width: 1096px;
+}
+
+.content h2 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.content p {
+    color: #999;
+    font-size: 18px;
+    line-height: 150%;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* max-width: 1096px; */
+    margin-bottom: 50px;
+}
+a{
+    background: #E50000;
+    padding: 18px 24px;
+    min-width: 251px;
+    text-align: center;
+}
