@@ -99,6 +99,8 @@ h1 {
     margin-bottom: 50px;
     margin: 0 auto;
     max-width: 1096px;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .content h2 {
@@ -118,9 +120,35 @@ h1 {
     /* max-width: 1096px; */
     margin-bottom: 50px;
 }
-a{
+
+a {
+    font-size: 18px;
     background: #E50000;
-    padding: 18px 24px;
+    padding: 17px 24px;
     min-width: 251px;
+    border-radius: 8px;
+}
+
+span {
+    background: url(../img/Icon.png) left / 20px no-repeat;
+    padding-left: 35px;
+}
+
+.footer {
+    font-family: "Manrope", sans-serif;
+    background: linear-gradient(95deg, rgba(53, 33, 68, 0.9612219887955182) 24%, rgba(59, 87, 110, 0.7959558823529411) 69%, rgba(23, 121, 158, 0.7987570028011204) 100%);
+    margin-inline: auto;
+
+}
+
+.footer h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
     text-align: center;
+    margin-inline: auto;
+    max-width: 500px;
+    border: 2px solid rgb(179, 156, 156);
+    border-radius: 10px 50px;
+    background: #27083c;
 }
