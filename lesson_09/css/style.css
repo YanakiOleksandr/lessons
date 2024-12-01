@@ -1,0 +1,10 @@
+@import url(reset.css);
+
+.block-list__item::before{
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url(../img/features/icon/check.svg) 0 0 / 32px no-repeat;
+    vertical-align: middle;
+    margin-right: 16px;
+}
