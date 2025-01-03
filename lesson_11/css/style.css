@@ -1,0 +1,334 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Glory:regular,600,700,800&display=swap");
+
+body {
+    font-family: "Glory", sans-serif;
+}
+.header,
+.footer{
+    background: linear-gradient(0deg, rgba(68, 1, 1, 0.9248074229691877) 27%, rgba(182, 0, 0, 0.835171568627451) 63%, rgba(190, 2, 2, 0.7847514005602241) 84%);
+}
+h1 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 800;
+    color: rgb(37, 3, 3);
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+
+.transform-examples__container {
+    max-width: 1500px;
+    background-color: hsla(0, 93%, 11%, 0.857);
+    /* margin-inline: -15px; */
+    margin: 0 auto;
+    text-align: center;
+    padding-block: 15px;
+}
+
+.example {
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid rgb(3, 3, 122);
+    border-radius: 5px;
+    perspective: 300px;
+}
+.example__title{
+    font-weight: 700;
+}
+
+.example--margin:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.example__front {
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 90px;
+    margin-bottom: 10px;
+    background-color: hsl(71 100% 54%);
+    text-align: center;
+    /* border: 1px solid rgb(255, 0, 0); */
+    border-radius: 9px;
+    box-shadow: 0px 0px 51px hsl(71, 100%, 54%);
+    transition: all 0.4s ease-in-out;
+}
+
+.example--translate:hover .example__front {
+    transform: translate(20px, 10px);
+}
+
+.example--scale:hover .example__front {
+    transform: scale(1.5);
+}
+
+.example--rotate:hover .example__front {
+    transform: rotate(70deg);
+}
+
+.example--skew:hover .example__front {
+    transform: skew(25deg, 10deg);
+}
+
+.example--origin:hover .example__front {
+    transform: rotate(110deg);
+    transform-origin: top left;
+}
+.example--3d-transform:hover .example__front{
+    transform: rotate3d(40, 70, 30, 40deg);
+}
+.car__container {
+    max-width: 1500px;
+    height: 600px;
+    padding: 15px;
+    background-color: gray;
+    position: relative;
+    margin: 0 auto;
+}
+
+.car__rear-side {
+    width: 600px;
+    height: 300px;
+    background-color: red;
+    border-radius: 25% 25% 0% 0% / 94% 94% 0% 0%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.car__rear-2-side {
+    position: absolute;
+    left: 50%;
+    top: 235px;
+    width: 645px;
+    height: 300px;
+    background: rgb(126, 3, 3);
+    background: radial-gradient(circle, rgba(126, 3, 3, 1) 42%, rgba(102, 0, 0, 1) 61%, rgba(171, 1, 1, 1) 91%);
+    border-radius: 5% 5% 2% 2% / 12% 12% 49% 49%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car__glass {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 550px;
+    height: 200px;
+    background: linear-gradient(156deg, rgba(24, 24, 24, 1) 41%, rgba(31, 0, 0, 0.9472163865546218) 70%);
+    border-radius: 25% 25% 3% 3% / 94% 94% 0% 0%;
+    transform: rotateX(20deg);
+    transform: translateX(-50%);
+}
+
+.car__trunk-top {
+    position: absolute;
+    left: 50%;
+    top: 230px;
+    width: 550px;
+    height: 50px;
+    border: 1px solid black;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 70% 85%, 30% 85%, 0 100%, 0 50%);
+    background: rgb(227, 1, 1);
+    background: linear-gradient(180deg, rgba(227, 1, 1, 1) 30%, rgba(171, 1, 1, 0.9472163865546218) 65%);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car__trunk-midle {
+    position: absolute;
+    left: 50%;
+    top: 265px;
+    width: 550px;
+    height: 70px;
+    border-top: 1px solid rgb(114, 2, 2);
+    border-inline: 2px solid rgb(114, 2, 2);
+    background: rgb(171, 1, 1);
+    background: linear-gradient(180deg, rgba(171, 1, 1, 1) 30%, rgba(156, 2, 2, 0.9472163865546218) 65%);
+    border-radius: 50% 50% 0% 0% / 15% 15% 41% 0%;
+    /* margin-bottom: 10px; */
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 90px;
+    height: 60px;
+    transform: translateX(-50%);
+}
+
+.car__trunk-bottom {
+    position: absolute;
+    left: 50%;
+    top: 330px;
+    width: 550px;
+    height: 135px;
+    background: rgb(126, 3, 3);
+    background: linear-gradient(180deg, rgba(126, 3, 3, 1) 6%, rgba(102, 0, 0, 1) 38%, rgba(171, 1, 1, 1) 68%);
+    border-radius: 0% 0% 15% 15% / 0% 0% 100% 100%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(114, 2, 2);
+    z-index: 2;
+}
+
+.car__stop-light-left {
+    position: absolute;
+    left: -0.2%;
+    top: 34px;
+    width: 200px;
+    height: 30px;
+    background: rgb(80, 0, 0);
+    background: linear-gradient(0deg, rgba(80, 0, 0, 1) 42%, rgba(110, 0, 0, 1) 61%);
+    border-radius: 0% 97% 0% 0% / 0% 78% 0% 0%;
+    border: 1px solid black;
+}
+
+.car__stop-light-right {
+    position: absolute;
+    left: 63.9%;
+    top: 34px;
+    width: 200px;
+    height: 30px;
+    background: rgb(80, 0, 0);
+    background: linear-gradient(0deg, rgba(80, 0, 0, 1) 42%, rgba(110, 0, 0, 1) 61%);
+    border-radius: 0% 97% 0% 0% / 0% 78% 0% 0%;
+    border: 1px solid black;
+    transform: scaleX(-1);
+}
+
+.car__stop-light-bottom-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 50px;
+    background: rgb(80, 0, 0);
+    background: linear-gradient(0deg, rgba(80, 0, 0, 1) 42%, rgba(80, 0, 0, 1) 61%);
+    border-radius: 0% 0% 81% 12% / 46% 0% 74% 100%;
+    border: 1px solid black;
+}
+
+.car__stop-light-bottom-right {
+    position: absolute;
+    left: 81.6%;
+    top: 0;
+    width: 100px;
+    height: 50px;
+    background: rgb(80, 0, 0);
+    background: linear-gradient(0deg, rgba(80, 0, 0, 1) 42%, rgba(80, 0, 0, 1) 61%);
+    border-radius: 0% 0% 81% 12% / 46% 0% 74% 100%;
+    border: 1px solid black;
+    transform: scaleX(-1);
+}
+
+.car__stop-light-mid-left {
+    position: absolute;
+    left: -9%;
+    top: 34px;
+    width: 52px;
+    height: 80px;
+    background: rgb(80, 0, 0);
+    background: linear-gradient(0deg, rgba(80, 0, 0, 1) 40%, rgba(110, 0, 0, 1) 72%);
+    clip-path: polygon(49% 2%, 71% 2%, 100% 0, 97% 47%, 100% 100%, 46% 100%, 1% 98%, 0 50%, 0% 0, 29% 1%);
+    border: 1px solid black;
+}
+
+.car__stop-light-mid-right {
+    position: absolute;
+    left: 99.3%;
+    top: 34px;
+    width: 52px;
+    height: 80px;
+    background: rgb(80, 0, 0);
+    background: linear-gradient(0deg, rgba(80, 0, 0, 1) 40%, rgba(110, 0, 0, 1) 72%);
+    box-shadow: inset 0px 0px -10px rgba(255, 255, 255, 0.842);
+    clip-path: polygon(49% 2%, 71% 2%, 100% 0, 97% 47%, 100% 100%, 46% 100%, 1% 98%, 0 50%, 0% 0, 29% 1%);
+    border: 1px solid black;
+    transform: scaleX(-1);
+}
+
+.car__bamper {
+    position: absolute;
+    left: 50%;
+    top: 255px;
+    width: 645px;
+    height: 50px;
+    border-radius: 10% 12% 47% 47% / 0% 0% 12% 12%;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.car__bamper-left {
+    position: absolute;
+    left: 0;
+    top: 219px;
+    width: 90px;
+    height: 50px;
+    border-radius: 5% 60% 47% 47% / 62% 70% 0% 0%;
+    background-color: black;
+}
+
+.car__bamper-right {
+    position: absolute;
+    left: 86.2%;
+    top: 219px;
+    width: 90px;
+    height: 50px;
+    border-radius: 5% 60% 47% 47% / 62% 70% 0% 0%;
+    background-color: black;
+    transform: scaleX(-1);
+}
+
+.car__exhaust-left {
+    position: absolute;
+    left: 11px;
+    top: 237px;
+    width: 65px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.car__exhaust-right {
+    position: absolute;
+    left: 569px;
+    top: 237px;
+    width: 65px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid white;
+    transform: scaleX(-1);
+}
+
+.car__tire-left {
+    position: absolute;
+    left: -25px;
+    top: 350px;
+    width: 130px;
+    height: 200px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.car__tire-right {
+    position: absolute;
+    left: 495px;
+    top: 350px;
+    width: 130px;
+    height: 200px;
+    background-color: black;
+    border-radius: 15px;
+}
+/* .footer{
+    position: fixed;
+    bottom: 0;
+    width: 1500px;
+    height: 100px;
+} */
